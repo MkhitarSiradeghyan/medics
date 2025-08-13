@@ -1,7 +1,7 @@
 :root {
   --color-dark: #000022;
   --color-mid: #003c7d;
-  --color-light: #0cf;
+  --color-light: #0af;
   --color-accent-: #ffc300;
   --color-black: #000000;
   --color-grey-1: #333333;
@@ -215,7 +215,12 @@ textarea {
   border-radius: var(--radius-full);
   font-size: var(--font-s);
   letter-spacing: 1px;
-  box-shadow: 0 10px 20px #0af;
+  box-shadow: 0 10px 10px #0af5;
+  transition: 0.3s;
+}
+.hero_btn:hover {
+  box-shadow: none;
+  transition: 0.3s;
 }
 .hero_media {
   flex-grow: 1;
@@ -239,18 +244,18 @@ textarea {
     filter: none
   }
   45% {
-    filter: drop-shadow(0 0 20px #0af) brightness(140%);
+    filter: drop-shadow(0 0 20px var(--color-light)) brightness(140%);
     scale: 1.05;
   }
   50% {
     filter: none
   }
   55% {
-    filter: drop-shadow(0 0 20px #0af) brightness(140%);
+    filter: drop-shadow(0 0 20px var(--color-light)) brightness(140%);
     scale: 1.05;
   }
   60% {
-    filter: drop-shadow(0 0 20px #0af) brightness(140%);
+    filter: drop-shadow(0 0 20px var(--color-light)) brightness(140%);
     scale: 1.05;
   }
 }
