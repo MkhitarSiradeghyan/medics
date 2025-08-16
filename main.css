@@ -1,5 +1,5 @@
 :root {
-  --color-dark: #000022;
+  --color-dark: #000011;
   --color-mid: #003c7d;
   --color-light: #0af;
   --color-accent-: #ffc300;
@@ -41,8 +41,9 @@
 
 body {
   height: 100vh;
-  background: var(--color-dark);
   font-family: var(--family-main);
+  background: var(--color-dark);
+  overflow-x: hidden;
 }
 
 a {
@@ -81,6 +82,8 @@ textarea {
   top: 0;
   left: 0;
   width: 100%;
+  backdrop-filter: blur(10px);
+  z-index: 999;
 }
 
 .header_wrap {
@@ -215,40 +218,73 @@ textarea {
   border-radius: var(--radius-full);
   font-size: var(--font-s);
   letter-spacing: 1px;
+  transition: 0.3s;
+  box-shadow: none;
+}
+.hero_btn:hover {
   box-shadow: 0 10px 10px #0af5;
   transition: 0.3s;
 }
-.hero_btn:hover {
-  box-shadow: none;
-  transition: 0.3s;
-}
 .hero_media {
-  flex-grow: 1;
   height: 100%;
   display: flex;
   justify-content: end;
   align-items: center;
-
+  z-index: 99;
+  position: relative;
+  position: absolute;
+  right: 10%;
+}
+.hero_media:before {
+  content: "";
+  background: radial-gradient(circle at 50% 50%, #07c, transparent 50%)
+    no-repeat center center / cover fixed;
+  position: absolute;
+  display: block;
+  width: 200%;
+  height: 200%;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
 }
 .hero_media img {
   animation: migat 2s linear infinite;
   height: 90%;
-  
-
+}
+.materials_list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  color: #08f;
+  padding: 2em;
+  gap: 2em;
+}
+.materials_card {
+  border-radius: 2em;
+  background: #00ccff0f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  padding: 2em;
+}
+.materials_img img {
+  filter: drop-shadow(0 0 5px #0ff);
+  width: 100px;
 }
 @keyframes migat {
   0% {
-    filter: none
+    filter: none;
   }
   40% {
-    filter: none
+    filter: none;
   }
   45% {
     filter: drop-shadow(0 0 20px var(--color-light)) brightness(140%);
     scale: 1.05;
   }
   50% {
-    filter: none
+    filter: none;
   }
   55% {
     filter: drop-shadow(0 0 20px var(--color-light)) brightness(140%);
