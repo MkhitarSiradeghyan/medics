@@ -1,8 +1,8 @@
 :root {
   --color-dark: #000011;
-  --color-mid: #003c7d;
-  --color-light: #0af;
-  --color-accent-: #ffc300;
+  --color-mid: #0022dd;
+  --color-light: #00aaff;
+  --color-accent: #00cc99;
   --color-black: #000000;
   --color-grey-1: #333333;
   --color-grey-2: #666666;
@@ -11,7 +11,7 @@
   --color-grey-5: #eeeeee;
   --color-white: #ffffff;
 
-  --gradient-bg: linear-gradient(#4ff, #4cf);
+  --gradient-bg: linear-gradient(45deg,var(--color-light), var(--color-accent));
 
   --family-main: sans-serif;
   --family-sec: Monospace;
@@ -213,17 +213,30 @@ textarea {
   line-height: 1.5;
 }
 .hero_btn {
-  background: var(--color-light);
+  background: var(--gradient-bg);
   padding: 1em 2em;
   border-radius: var(--radius-full);
   font-size: var(--font-s);
   letter-spacing: 1px;
   transition: 0.3s;
   box-shadow: none;
+  position: relative;
 }
-.hero_btn:hover {
-  box-shadow: 0 10px 10px #0af5;
+.hero_btn:after {
+content: "";
+display: block;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: -1;
+border-radius: inherit;
+filter: blur(10px);
+}
+.hero_btn:hover > .hero_btn:after{
   transition: 0.3s;
+  background: var(--gradient-bg);
 }
 .hero_media {
   height: 100%;
@@ -251,26 +264,41 @@ textarea {
   animation: migat 2s linear infinite;
   height: 90%;
 }
+.materials {
+}
+.materials_wrap {
+}
+.materials_heading {
+  background: linear-gradient(
+  45deg,
+  var(--color-light),
+  var(--color-accent)
+  );
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+font-size: var(--font-xl);
+}
 .materials_list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  color: #08f;
-  padding: 2em;
-  gap: 2em;
 }
 .materials_card {
-  border-radius: 2em;
-  background: #00ccff0f;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1em;
-  padding: 2em;
+
+
+}
+.materials_img {
+  width: 5em;
 }
 .materials_img img {
-  filter: drop-shadow(0 0 5px #0ff);
-  width: 100px;
+  width: 100%;
+}
+.materials_title {
 }
 @keyframes migat {
   0% {
