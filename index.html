@@ -1,123 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/js/all.min.js"
-      integrity="sha512-gBYquPLlR76UWqCwD06/xwal4so02RjIR0oyG1TIhSGwmBTRrIkQbaPehPF8iwuY9jFikDHMGEelt0DtY7jtvQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="main.css" />
-  </head>
-  <body>
-    <header class="header" id="header">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/js/all.min.js"
+    integrity="sha512-gBYquPLlR76UWqCwD06/xwal4so02RjIR0oyG1TIhSGwmBTRrIkQbaPehPF8iwuY9jFikDHMGEelt0DtY7jtvQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header_wrap">
+        <div class="header_logo">
+          <img src="./img/logo.png" alt="" />
+        </div>
+        <input type="checkbox" id="check" />
+        <label for="check" class="burger">
+          <div class="line t"></div>
+          <div class="line m"></div>
+          <div class="line b"></div>
+        </label>
+        <nav class="header_nav">
+          <ul class="header_list">
+            <li class="header_item">
+              <a href="" class="header_link">Գլխավոր</a>
+            </li>
+            <li class="header_item">
+              <a href="" class="header_link">3D անիմացիաներ</a>
+            </li>
+            <li class="header_item">
+              <a href="" class="header_link">Դասընթացներ</a>
+            </li>
+            <li class="header_item">
+              <a href="" class="header_link">Ուս․ հաստատություններ</a>
+            </li>
+            <li class="header_item">
+              <a href="" class="header_link">Անհատական էջ</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header_account">
+          <a href="" class="header_signin" id="signin_text">Մուտք</a>
+          <a href="" class="header_signin" id="signin_icon"><i class="fa-solid fa-user"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="hero" id="hero">
       <div class="container">
-        <div class="header_wrap">
-          <div class="header_logo">
-            <img src="./img/logo.png" alt="" />
+        <div class="hero_wrap">
+          <div class="hero_block">
+            <h1 class="hero_title">Սկսիր բժշկական ճանապարհդ այսօր</h1>
+            <a href="" class="hero_btn">Տեսնել Դասընթացները</a>
           </div>
-          <input type="checkbox" id="check" />
-          <label for="check" class="burger">
-            <div class="line t"></div>
-            <div class="line m"></div>
-            <div class="line b"></div>
-          </label>
-          <nav class="header_nav">
-            <ul class="header_list">
-              <li class="header_item">
-                <a href="" class="header_link">Գլխավոր</a>
-              </li>
-              <li class="header_item">
-                <a href="" class="header_link">3D անիմացիաներ</a>
-              </li>
-              <li class="header_item">
-                <a href="" class="header_link">Դասընթացներ</a>
-              </li>
-              <li class="header_item">
-                <a href="" class="header_link">Ուս․ հաստատություններ</a>
-              </li>
-              <li class="header_item">
-                <a href="" class="header_link">Անհատական էջ</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="header_account">
-            <a href="" class="header_signin" id="signin_text">Մուտք</a>
-            <a href="" class="header_signin" id="signin_icon"
-              ><i class="fa-solid fa-user"></i>
-            </a>
+          <div class="hero_media">
+            <img src="./img/heart.png" alt="heart" />
           </div>
         </div>
       </div>
-    </header>
-    <main class="main">
-      <section class="hero" id="hero">
-        <div class="container">
-          <div class="hero_wrap">
-            <div class="hero_block">
-              <h1 class="hero_title">Սկսիր բժշկական ճանապարհդ այսօր</h1>
-              <a href="" class="hero_btn">Տեսնել Դասընթացները</a>
+    </section>
+    <section class="materials" id="materials">
+      <div class="container">
+        <div class="materials_wrap">
+          <h2 class="materials_heading">Ուսումնական նյութեր</h2>
+          <div class="materials_list">
+            <div class="materials_card">
+              <div class="materials_img">
+                <img src="./img/doctor.png" alt="doctors" />
+              </div>
+              <h3 class="materials_title">Բժիշկներ</h3>
+              <div class="materials_more">
+                <span>Tesnel avelin</span>
+                <i class="fa-solid fa-arrow-right-long"></i></div>
             </div>
-            <div class="hero_media">
-              <img src="./img/heart.png" alt="heart" />
+            <div class="materials_card">
+              <div class="materials_img">
+                <img src="./img/medicine.png" alt="dentists" />
+              </div>
+              <h3 class="materials_title">Դեղագետներ</h3>
+              <div class="materials_more">
+                <span>Tesnel avelin</span>
+                <i class="fa-solid fa-arrow-right-long"></i></div>
             </div>
-          </div>
-        </div>
-      </section>
-      <section class="materials" id="materials">
-        <div class="container">
-          <div class="materials_wrap">
-            <h2 class="materials_heading">Ուսումնական նյութեր</h2>
-            <div class="materials_list">
-              <div class="materials_card">
-                <div class="materials_img">
-                  <img src="./img/doctor.png" alt="doctors" />
-                </div>
-                <h3 class="materials_title">Բժիշկներ</h3>
+            <div class="materials_card">
+              <div class="materials_img">
+                <img src="./img/dent.png" alt="dentists" />
               </div>
-              <div class="materials_card">
-                <div class="materials_img">
-                  <img src="./img/medicine.png" alt="dentists" />
-                </div>
-                <h3 class="materials_title">Դեղագետներ</h3>
+              <h3 class="materials_title">Ատամնաբույժներ</h3>
+              <div class="materials_more">
+                <span>Tesnel avelin</span>
+                <i class="fa-solid fa-arrow-right-long"></i></div>
+            </div>
+            <div class="materials_card">
+              <div class="materials_img">
+                <img src="./img/student.png" alt="doctors" />
               </div>
-              <div class="materials_card">
-                <div class="materials_img">
-                  <img src="./img/dent.png" alt="dentists" />
-                </div>
-                <h3 class="materials_title">Ատամնաբույժներ</h3>
-              </div>
-              <div class="materials_card">
-                <div class="materials_img">
-                  <img src="./img/student.png" alt="doctors" />
-                </div>
-                <h3 class="materials_title">Ուսանողներ</h3>
-                
-              </div>
+              <h3 class="materials_title">Ուսանողներ</h3>
+              <div class="materials_more">
+                <span>Tesnel avelin</span>
+                <i class="fa-solid fa-arrow-right-long"></i></div>
+
             </div>
           </div>
         </div>
-      </section>
-    </main>
-  </body>
+      </div>
+    </section>
+    <section class="cta" id="cta">
+      <div class="container">
+        <div class="cta_wrap">
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
 </html>

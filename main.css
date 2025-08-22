@@ -44,6 +44,7 @@ body {
   font-family: var(--family-main);
   background: var(--color-dark);
   overflow-x: hidden;
+
 }
 
 a {
@@ -264,9 +265,9 @@ filter: blur(10px);
   animation: migat 2s linear infinite;
   height: 90%;
 }
-.materials {
-}
+
 .materials_wrap {
+  padding: 100px 0;
 }
 .materials_heading {
   background: linear-gradient(
@@ -277,29 +278,61 @@ filter: blur(10px);
   background-clip: text;
   color: transparent;
   display: inline-block;
-font-size: var(--font-xl);
+font-size: var(--font-2xl);
+padding: 3em 0;
 }
 .materials_list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  gap: 3em;
 }
 .materials_card {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  gap: 1em;
-
-
+align-items: center;
+flex-direction: column;
+border: 2px solid #0ff;
+padding: 3em;
+border-radius: 16px;
+box-shadow:  
+  0 0 10px #0fe,
+  inset 0 0 10px #0fe;
 }
 .materials_img {
-  width: 5em;
+  width: 8em;
+  grid-area: img;
 }
 .materials_img img {
   width: 100%;
+  filter: drop-shadow(0 0 4px #0af);
 }
 .materials_title {
+  grid-area: title;
+  color: #fff;
 }
+.materials_more {
+color: #fff5;
+display: none;
+}
+.cta {
+  height: 60vh;
+  background: #fff;
+  box-shadow: 0 0 100px 100px #fff;
+  padding: 5em 0;
+
+}
+
+.cta_wrap {
+
+  width: 500px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+
+}
+
 @keyframes migat {
   0% {
     filter: none;
